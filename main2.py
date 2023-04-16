@@ -9,7 +9,7 @@ screen.title('My Snake Game')
 screen.tracer(0)
 
 snake=Snake()
-
+print('do it with oop')
 game_is_on= True
 while game_is_on:
     screen.update()

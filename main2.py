@@ -1,6 +1,6 @@
 import time
 from turtle import Screen
-
+#from scoreboard import Score
 from food import Food
 from snake import Snake
 
@@ -12,6 +12,8 @@ screen.tracer(0)
 
 snake=Snake()
 food=Food()
+
+
 
 screen.listen()
 screen.onkey(snake.up,'Up')
@@ -28,7 +30,7 @@ while game_is_on:
 
     #Detect coalition with food
     if snake.head.distance(food)<15:
-        print('nom nom nom ')
+        food.refresh()
 
 
 
